@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/login', function(req, res, next) {
+  // res.render('index');
+  console.log('Login Method');
+});
+
 module.exports = router;

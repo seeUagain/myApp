@@ -1,7 +1,9 @@
-var mongoose = require('mongoose');
+var mongoose = require('../config/config').mongoose;
+
 var Schema = mongoose.Schema;
 var userSchema = new Schema({
-    username: string,
-    password: string
+    username: String,
+    password: String
 });
-exports.user = mongoose.model('users', userSchema);
+
+exports.UserEntity = mongoose.model('users', userSchema);
